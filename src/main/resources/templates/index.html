@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8"></meta>
+  <title>Login</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/index.js"></script>
+  <link rel="stylesheet" href="../../styles/loginstyle.css"></link>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="main" id="f1">
+  <form id="form1" method="post" action="#">
+    <h2>LOGIN</h2>
+    <label>Username :</label>
+    <input type="text" name="uname" id="uname"></input>
+    <label>Password :</label>
+    <input type="password" name="password" id="password"></input>
+    <input type="button" name="login" id="login" value="Login"></input>
+    <input type="button" name="reg_form" id="reg_form" value="Register"></input>
+	</form>
+	</div>
+	
+	<div class="main" id="f2">
+  <form id="form2" method="post" action="#">
+    <h2>SIGN UP</h2>
+    <label>Username :</label>
+    <input type="text" name="uname" id="unamereg" required="required"></input>
+    <label>Password :</label>
+    <input type="password" name="password" id="passwordreg" required="required"></input>
+    <label>Cofirm password: </label>
+    <input type="password" name="conf_password" id="conf_password" required="required"></input>
+    <label>First name: </label>
+    <input type="text" name="first_name" id="fname"></input>
+    <label>Last name: </label>
+    <input type="text" name="last_name" id="lname" />
+    <label>Image : </label>
+    <input type="file" name="image" accept="image/*" id="image"/>
+    <input type="button" name="registrate" id="registrate" value="Register"></input>
+	</form>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script type="text/javascript" src="../../js/dashboard.js"></script>
+ <link rel="stylesheet" href="../../styles/dashboardstyle.css"></link>
+<title>Dashboard</title>
+</head>
+<body>
+	<header>
+    <div class="nav">
+      <ul>
+        <li id="my_confs"><a href="#" id="my_confs_a">My confs</a></li>
+        <li id="all_confs"><a href="#" id="all_confs_a">All confs</a></li>
+        <li id="attends"><a href="#" id="attends_a">Attends</a></li>
+        <li id="add_conf"><a href="#" id="add_conf_a">Add conf</a></li>
+      </ul>
+    </div>
+  </header>
+	<div id="addConfForm">
+		<form id="contact">
+  		<div class="container">
+    	<div class="head">
+      	<h2>Create conference</h2>
+    	</div>
+    	<input type="hidden" id="confId"/>
+    	<input type="text" name="name" id="newConfName" placeholder="Name" required="required"/><br />
+    	<input type="text" name="name" id="newConfPlace" placeholder="Place" required="required"/><br />
+    	<input type="text" name="theme" id="newConfTheme" placeholder="Theme" required="required"/><br />
+    	<input  type="date" name="startDate" id="startDate" placeholder="Start date" /><br />
+    	<input  type="date" name="endDate" id="endDate" placeholder="End date" /><br />
+    	<input type="text" name="shortDescr" id="shortDescr" placeholder="Short description" required="required"/><br />
+    	<textarea name="longDescr" id="longDescr" placeholder="Long description"></textarea><br />
+    	<input type="button" id="submitConf" value="SAVE"/>
+  </div>
+</form>
+	</div>
+	<div id="myConfsTable">
+		<table class="hoverTable" id="hoverTableId">
+			<tr>
+				<th>Name</th>
+				<th>Place</th>
+				<th>Theme</th>
+				<th>Start date</th>
+				<th>End date</th>
+				<th>Short description</th>
+				<th></th>
+			</tr>
+		</table>
+	</div>
+	<div id="allConfsTable">
+		<table class="hoverTable" id="hoverTableIdAll">
+			<tr>
+				<th>Name</th>
+				<th>Place</th>
+				<th>Theme</th>
+				<th>Start date</th>
+				<th>End date</th>
+				<th>Short description</th>
+				<th></th>
+			</tr>
+		</table>
+	</div>
+	<div id="userAttendaces">
+		<table class="hoverTable" id="hoverTableAttendances">
+			<tr>
+				<th>Name</th>
+				<th>Place</th>
+				<th>Theme</th>
+				<th>Start date</th>
+				<th>End date</th>
+				<th>Short description</th>
+				<th></th>
+			</tr>
+		</table>	
+	</div>
+	<div id="userInfo">
+		<div class="user">
+			<img id="userAvatar" alt="USER"/>
+			<h2 id="userName"></h2>
+		</div>
+	</div>
+</body>
+</html>
