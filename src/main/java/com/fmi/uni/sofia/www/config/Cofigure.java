@@ -10,7 +10,6 @@ public class Cofigure extends WebMvcConfigurerAdapter {
 	
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		System.out.println("Adding interseptor!");
 		registry.addInterceptor(new Interseptor());
 	}
 	
